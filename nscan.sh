@@ -9,7 +9,7 @@ echo  -en "\e[1;93m  [+] Enter the target IP  or Domain name >>>     \e[0m"
 read IP
 sleep 1
 
-# creating a menu with the following options
+
 echo  -e "\e[1;93m  [+] SELECT THE SCAN-TYPE   \e[0m" 
 echo " 1. HOST SCAN"
 echo " 2. TCP SYN port scan"
