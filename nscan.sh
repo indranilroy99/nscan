@@ -48,33 +48,33 @@ case $choice in
       nmap  -T4 -sT $IP;;   
 
   4) clear ;echo  -e "\e[1;43m [+] Performing ACK scan for $IP  \e[0m"   
-      nmap   -sA  -T4 $IP;;
+      nmap  -T4 -sA   $IP;;
 
   5)  clear ;echo  -e "\e[1;43m [+] Performing Window scan for $IP  \e[0m"   
-      nmap   -sW -T4 $IP;; 
+      nmap   -T4 -sW  $IP;; 
   
   6)  clear ;echo  -e "\e[1;43m [+] Performing Maimon scan for $IP  \e[0m"     
-      nmap   -sM -T4 $IP;; 
+      nmap   -T4 -sM  $IP;; 
   7) clear ;echo  -e "\e[1;43m [+] Performing UDP scan for $IP  \e[0m"   
-      nmap   -sU -T4 $IP;;
+      nmap  -T4 -sU  $IP;;
   
  8) clear ;echo  -e "\e[1;43m [+] Performing TCP NULL scan for $IP  \e[0m"   
-      nmap   -sN -T4 $IP;;
+      nmap  -T4 -sN  $IP;;
 
  9) clear ;echo  -e "\e[1;43m [+] Performing FIN  scan for $IP  \e[0m"      
-    nmap   -sF -T4 $IP;;
+    nmap  -T4 -sF  $IP;;
   
 10) clear ;echo  -e "\e[1;43m [+] Performing Xmas scan for $IP  \e[0m"   
-    nmap   -sX -T4 $IP;;
+    nmap  -T4  -sX  $IP;;
  
 11) clear ;echo  -e "\e[1;43m [+] Performing COOKIE-ECHO  scan for $IP  \e[0m"    
-    nmap   -sZ -T4 $IP;;   
+    nmap  -T4 -sZ  $IP;;   
 
 12)clear ;echo  -e "\e[1;43m [+] Performing IP-PROTOCOL scan for $IP  \e[0m"   
-    nmap   -sO -T4 $IP;;
+    nmap  -T4 -sO  $IP;;
 
 13) clear ;echo  -e "\e[1;43m [+] Performing SCRIPT INIT scan for $IP  \e[0m"     
-    nmap   -sY -T4 $IP;;  
+    nmap  -T4 -sY  $IP;;  
        
 14) clear 
    echo  -en  "\e[1;93m [+] Enter the subnet>>>  \e[0m" 
@@ -100,4 +100,3 @@ case $choice in
 esac
 echo  -en  "\e[1;36m QUITTING....   \e[0m" 
 sleep 2
-
