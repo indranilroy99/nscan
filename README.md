@@ -6,6 +6,7 @@ If you are very new to namp or netwrok scanning , you can use this tool to make 
 Installing (Kali Linux/Termux):
 ```
 git clone https://github.com/indranilroy99/nscan.git
+cd nscan
 sudo chmod +x ./nscan.sh
 sudo ./nscan.sh
 ```
