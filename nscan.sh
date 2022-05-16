@@ -33,9 +33,6 @@ sleep 1
 
 echo  -en  "\e[1;93m   [+] ENTER YOUR SELECTION >>>    \e[0m" 
 
-# Running a forever loop using while statement
-# This loop will run untill select the exit option.
-# User will be asked to select option again and again
 
 read choice
 
@@ -45,10 +42,10 @@ case $choice in
       nmap   $IP;;
   
   2) clear ;echo  -e "\e[1;43m [+] Performing TCP SYN scan for $IP  \e[0m" 
-      nmap  -sS -T4 $IP;;
+      nmap   -T4 -sS $IP;;
       
   3) clear ;echo  -e "\e[1;43m [+] Performing Connect scan for $IP  \e[0m" 
-      nmap   -sT -T4 $IP;;   
+      nmap  -T4 -sT $IP;;   
 
   4) clear ;echo  -e "\e[1;43m [+] Performing ACK scan for $IP  \e[0m"   
       nmap   -sA  -T4 $IP;;
